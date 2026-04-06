@@ -5,7 +5,6 @@ class KillportApp < Formula
   license "MIT"
 
   depends_on :macos
-  depends_on :xcode => ["12.0", :build]
 
   def install
     system "swiftc", "-o", "killport-app", "KillPort.swift", "-framework", "AppKit", "-O"
